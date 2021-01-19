@@ -20,6 +20,8 @@ const preloadMediaItem = (id) =>
         }
     })
 
+// A simple way of managing a list of media and controlling their
+// play state centrally
 export const MediaController = (targets) =>
     new Promise(async (resolve, reject) => {
         try {
