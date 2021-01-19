@@ -15,3 +15,20 @@ export const delay = (duration = 400) => new Promise(resolve => setTimeout(resol
 export const setClass = (element, className, check = true) => {
     check ? element.classList.add(className) : element.classList.remove(className)
 }
+
+const prefixes = {
+    transition: 'Transition',
+    transformOrigin: 'TransformOrigin',
+    transform: 'Transform',
+}
+
+// Returns a vendor-prefixed style
+export const setStyle = (element, styleAttributes = []) => {
+    element.style = styleAttributes.map(([property, value]) => {
+        if (prefixes[property]) {
+            return `Webkit${prefixes[property]}: ${value}; ms${prefixes[property]}: ${value}; O${prefixes[property]} ${value}; ${property}: ${value}`
+        } else {
+            return `${property}: ${value}`
+        }
+    }).join(';')
+}

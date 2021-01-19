@@ -1,4 +1,4 @@
-import { isReady, setClass } from './js/utils';
+import { isReady, setClass, setStyle } from './js/utils';
 import { MediaController } from './js/media'
 import { StateController } from './js/state'
 
@@ -56,7 +56,7 @@ isReady(async () => {
             setClass(dom.container, 'transition', true)
 
             // Update the progress indicator on right hand side
-            dom.progress.style.transform = `scale(1.0, ${1 / count}) translateY(${index * 100}%)`
+            setStyle(dom.progress, [['transform', `scale(1.0, ${1 / count}) translateY(${index * 100}%)`]])
 
             // Iterate through the panels and set active class if panel is visible
             for (let i = 0; i < count; i++) {
@@ -76,7 +76,7 @@ isReady(async () => {
 
             // Iterate through the panels and toggle visibility depending on which panel is active
             for (let i = 0; i < count; i++) {
-                dom.panels[i].style.opacity = i <= index ? 1.0 : 0.0
+                setStyle(dom.panels[i], [['opacity', i <= index ? 1.0 : 0.0]])
             }
 
             // Remove transition class from container
