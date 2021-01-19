@@ -1,0 +1,30 @@
+nav.primary {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  z-index: 6;
+}
+
+nav.primary > ol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+nav.primary > ol > li {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  user-select: none;
+}
+
+nav.primary > ol > li > .logo {
+  font-weight: bold;
+}

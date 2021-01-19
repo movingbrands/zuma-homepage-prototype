@@ -1,0 +1,16 @@
+{
+  "name": "zuma-homepage-prototype",
+  "version": "0.0.1",
+  "description": "Prototype for Zuma homepage",
+  "main": "index.js",
+  "author": "Toby Milner-Gulland <tmgulland@movingbrands.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "snowpack dev",
+    "build": "snowpack build --clean"
+  },
+  "devDependencies": {
+    "snowpack": "^3.0.11"
+  }
+}

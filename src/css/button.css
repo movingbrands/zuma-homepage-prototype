@@ -1,0 +1,55 @@
+button,
+.button {
+  background: initial;
+  border: 1px solid black;
+  color: black;
+  outline: initial;
+  font: inherit;
+  font-weight: 600;
+  padding: 0 20px;
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+button:hover,
+.button:hover {
+  transform: scale(1.02) translateY(-3px);
+}
+
+button.white,
+.button.white {
+  background: #fffeee;
+  color: #000000;
+  border-color: #fffeee;
+}
+button.black,
+.button.black {
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+button.blank,
+.button.blank {
+  border-color: rgba(0, 0, 0, 0);
+}
+
+button:hover,
+button.blank:hover,
+button.black:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+button > svg {
+  margin-right: 10px;
+}
+button > svg * {
+  stroke-width: 2px;
+}

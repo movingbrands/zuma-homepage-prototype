@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Aleck";
+  src: url("../fonts/BeausiteClassicTrial-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beausite Classic";
+  src: url("../fonts/BeausiteClassicTrial-Clear.otf") format("opentype");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beausite Slick";
+  src: url("../fonts/BeausiteSlickTrial-Light.otf") format("opentype");
+  font-weight: 300;
+  font-display: swap;
+}
